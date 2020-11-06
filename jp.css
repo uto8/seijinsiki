@@ -1,0 +1,21 @@
+.type-pers-parent {
+  perspective: 150px;
+  -webkit-perspective: 1000px;
+  height: 600px;
+  background-color: #222;
+  overflow: hidden;
+}
+.type-pers-child {
+  text-align: justify;
+  padding: 5%;
+  -webkit-animation: typetext linear 8s infinite;
+  color: #F1C40F;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 80px;
+}
+
+@-webkit-keyframes typetext {
+   0% {transform: rotateX(45deg) translate(0,0);}
+  100% {transform: rotateX(45deg) translate(0,-500px);}
+}
